@@ -1,6 +1,7 @@
 # CLI commands notes
 
 Table of contents
+
 * [1. Archives](#markdown-header-1-archives)
 
 * [2. Mysql dump](#markdown-header-2-mysql-dump)
