@@ -1,14 +1,14 @@
 # CLI commands notes
 
 Table of contents
-- [1. Archives](#1-Archives)
-- [2. Mysql dump](#2-Mysql dump)
-- [3. Work with files](#3-Work with files)
-- [4. Git](#4-Git)
-- [5. SVN](#5-SVN)
-- [6. Other](#6-Other)
-- [7. Work with processes](#7-Work with processes)
-- [8. Mac OS](#8-Mac OS)
+* [1. Archives](#markdown-header-1-archives)
+* [2. Mysql dump](#markdown-header-2-mysql-dump)
+* [3. Work with files](#markdown-header-2-mysql-dump)
+* [4. Git](#markdown-header-4-git)
+* [5. SVN](#markdown-header-4-git)
+* [6. Other](#markdown-header-4-git)
+* [7. Work with processes](#markdown-header-7-work-with-processes)
+* [8. Mac OS](#markdown-header-7-work-with-processes)
 
 ### 1. Archives
 Pack
