@@ -32,6 +32,16 @@ Unpack
 #!bash
 tar -zxvf bitrix.tar.gz
 ```
+Pack and split by size
+```
+#!bash
+tar cvzf - dir/ | split --bytes=200MB - sda1.backup.tar.gz.
+```
+Unpack multiple parts
+```
+#!bash
+cat sda1.backup.tar.gz.* | tar xzvf -
+```
 
 ### 2. Mysql dump
 Export
