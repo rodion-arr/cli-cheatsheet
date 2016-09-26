@@ -32,6 +32,11 @@ Unpack
 #!bash
 tar -zxvf bitrix.tar.gz
 ```
+Unpack and skip existing files
+```
+#!bach
+tar --skip-old-files -zxvf bitrix.tar.gz
+```
 Pack and split by size
 ```
 #!bash
