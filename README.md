@@ -54,10 +54,15 @@ Export
 #!bash
 mysqldump --opt -u USER -p DBNAME > dbname.sql
 ```
-Import
+Import .sql file
 ```
 #!bash
 mysql -u USER -p DBNAME < dbname.sql
+```
+Import .sql.qz file
+```
+#!bash
+gunzip -cd dump.sql.gz | mysql -u USER -p DBNAME
 ```
 
 ### 3. Work with files
