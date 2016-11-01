@@ -139,6 +139,13 @@ Clone from SVN repo
 #!bash
 git svn clone -s http://source.epages.su/svn/nasosik/
 ```
+Update Git CentOS
+```
+#!bash
+yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
+yum install git
+git --version
+```
 
 ### 5. SVN
 New svn repo
