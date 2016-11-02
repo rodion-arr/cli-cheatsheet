@@ -114,6 +114,11 @@ chmod -R 755 /var/www
 find * -type d -print0 | xargs -0 chmod 0755 # for directories
 find . -type f -print0 | xargs -0 chmod 0644 # for files
 ```
+Find text in file
+```
+#!bash
+grep --include=\*.{xml,php} -rnw '/path/to/somewhere/' -e "pattern"
+```
 
 ### 4. Git
 Add repo to existing folder
