@@ -119,6 +119,11 @@ Find text in file
 #!bash
 grep --include=\*.{xml,php} -rnw '/path/to/somewhere/' -e "pattern"
 ```
+Find directory by name
+```
+#!bash
+find  / -name "apt"
+```
 
 ### 4. Git
 Add repo to existing folder
