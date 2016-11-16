@@ -156,6 +156,15 @@ yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-rele
 yum install git
 git --version
 ```
+Get repo from site by HTTP
+```
+#!bash
+git clone http://chaosdorf.de/.git/
+curl http://chaosdorf.de/.git/HEAD
+curl http://chaosdorf.de/.git/refs/heads/master
+git http-fetch -a 57104ea967fc24763ead9c57d3463a80e9d05eea http://chaosdorf.de/.git
+git checkout 57104ea967fc24763ead9c57d3463a80e9d05eea
+```
 
 ### 5. SVN
 New svn repo
