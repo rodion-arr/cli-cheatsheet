@@ -2,21 +2,23 @@
 
 Table of contents
 
-* [1. Archives](#markdown-header-1-archives)
+* [1. Archives](#1-archives)
 
-* [2. Mysql dump](#markdown-header-2-mysql-dump)
+* [2. Mysql dump](#2-mysql-dump)
 
-* [3. Work with files](#markdown-header-2-mysql-dump)
+* [3. Work with files](#3-work-with-files)
 
-* [4. Git](#markdown-header-4-git)
+* [4. Git](#4-git)
 
-* [5. SVN](#markdown-header-5-svn)
+* [5. SVN](#5-svn)
 
-* [6. Other](#markdown-header-6-other)
+* [6. Other](#6-other)
 
-* [7. Work with processes](#markdown-header-7-work-with-processes)
+* [7. Work with processes](#7-work-with-processes)
 
-* [8. Mac OS](#markdown-header-8-mac-os)
+* [8. Mac OS](#8-mac-os)
+
+* [9. DigitalOcean](#9-digitalocean)
 
 - - -
 
@@ -215,4 +217,14 @@ Secondary skype
 ```
 #!bash
 alias skype2='sudo /Applications/Skype.app/Contents/MacOS/Skype /secondary'
+```
+
+### 9. DigitalOcean
+Ubuntu 16 nginx `/etc/nginx/`
+```
+#!bash
+sudo systemctl restart nginx
+sudo systemctl stop nginx
+sudo systemctl start nginx
+nginx -t
 ```
