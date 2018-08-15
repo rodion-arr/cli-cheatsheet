@@ -194,3 +194,8 @@ sudo systemctl stop nginx
 sudo systemctl start nginx
 nginx -t
 ```
+
+Enable site in nginx
+```bash
+ln -s /etc/nginx/sites-available/freebestgames.xyz /etc/nginx/sites-enabled/freebestgames.xyz
+```
