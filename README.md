@@ -58,6 +58,27 @@ Import .sql.qz file
 ```bash
 gunzip -cd dump.sql.gz | mysql -u USER -p DBNAME
 ```
+Open remote connections
+```bash
+# open 3306 port
+sudo ufw allow 3306/tcp
+sudo service ufw restart
+
+# set bind-address = *
+vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+# update user
+GRANT ALL ON *.* TO root@% IDENTIFIED BY 'your_password';
+FLUSH PRIVILEGES; 
+```
+
+### 3. Work with files
+Remove directories
+```bash
+rm -rf mydir
+```
+Show dir sizes
+```
 
 ### 3. Work with files
 Remove directories
