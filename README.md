@@ -206,6 +206,10 @@ Secondary skype
 ```bash
 alias skype2='sudo /Applications/Skype.app/Contents/MacOS/Skype /secondary'
 ```
+Find processes
+```bash
+ps -ef | grep php
+```
 
 ### 9. DigitalOcean
 Ubuntu 16 nginx `/etc/nginx/`
