@@ -20,6 +20,8 @@ Table of contents
 
 * [9. DigitalOcean](#9-digitalocean)
 
+* [10. Kubernetes Azure](#10-kubernetes-azure)
+
 - - -
 
 ### 1. Archives
@@ -223,4 +225,27 @@ nginx -t
 Enable site in nginx
 ```bash
 ln -s /etc/nginx/sites-available/freebestgames.xyz /etc/nginx/sites-enabled/freebestgames.xyz
+```
+
+### 10. Kubernetes Azure
+
+#### Azure CLI 
+```bash
+az login 
+az account list 
+az account set --subscription "Aspire Global Corp"
+az account show
+az aks list
+az aks get-credentials --resource-group dev_solar --name dev-solar-wdrt
+kubectl get pods
+```
+
+#### PowerShell Module 
+```powershell
+Get-AzContext 
+Connect-AzAccount 
+Import-AzAksCredential 
+kubectl version 
+kubectl get pods 
+kubectl exec -it solar-6fb4cf8cc7-j6pm2 sh 
 ```
