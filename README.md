@@ -228,8 +228,8 @@ ln -s /etc/nginx/sites-available/freebestgames.xyz /etc/nginx/sites-enabled/free
 ```
 
 ### 10. Kubernetes Azure
-
-#### Azure CLI 
+#### kubectl configuration
+##### Azure CLI 
 ```bash
 az login 
 az account list 
@@ -240,7 +240,7 @@ az aks get-credentials --resource-group dev_solar --name dev-solar-wdrt
 kubectl get pods
 ```
 
-#### PowerShell Module 
+##### PowerShell Module 
 ```powershell
 Get-AzContext 
 Connect-AzAccount 
@@ -248,4 +248,15 @@ Import-AzAksCredential
 kubectl version 
 kubectl get pods 
 kubectl exec -it solar-6fb4cf8cc7-j6pm2 sh 
+```
+
+#### K8s secrets
+Create secret
+```bash
+kubectl create secret generic SECRET_NAME --from-literal=SECRET_KEY=SECRET_VALUE --from-literal=SECRET_KEY2=SECRET_VALUE2
+```
+
+Delete secret
+```bash
+kubectl delete secret SECRET_NAME
 ```
