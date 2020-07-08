@@ -47,6 +47,12 @@ Unpack multiple parts
 cat sda1.backup.tar.gz.* | tar xzvf -
 ```
 
+#### ZIP (Mac)
+```bash
+zip -r -X archive_name.zip folder_to_compress
+unzip archive_name.zip
+```
+
 ### 2. Mysql dump
 Export
 ```bash
