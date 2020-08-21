@@ -27,7 +27,7 @@ Table of contents
 ### 1. Archives
 Pack
 ```bash
-tar --exclude="bitrix/backup/*" --exclude="bitrix/cache/*" --exclude="bitrix/managed_cache/*" --exclude="bitrix/stack_cache/*" --exclude="bitrix/html_pages/*" -zcvf bitrix.tar.gz ./bitrix
+tar -zcvf --exclude="bitrix/backup/*" --exclude="bitrix/cache/*" --exclude="bitrix/managed_cache/*" --exclude="bitrix/stack_cache/*" --exclude="bitrix/html_pages/*" bitrix.tar.gz ./bitrix
 tar -zcvf git.tar.gz ".git"
 ```
 Unpack
