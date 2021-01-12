@@ -86,14 +86,6 @@ Remove directories
 rm -rf mydir
 ```
 Show dir sizes
-```
-
-### 3. Work with files
-Remove directories
-```bash
-rm -rf mydir
-```
-Show dir sizes
 ```bash
 du -sh *
 ```
