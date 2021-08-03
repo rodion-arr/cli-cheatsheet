@@ -179,6 +179,10 @@ Plesk php
 ```bash
 /opt/plesk/php/5.6/bin/php
 ```
+Measure cURL response time
+```bash
+curl -l "https://URL" -w 'Establish Connection: %{time_connect}s\nTTFB: %{time_starttransfer}s\nTotal: %{time_total}s\n'
+```
 
 ### 7. Work with processes
 ```bash
