@@ -164,6 +164,16 @@ git http-fetch -a 57104ea967fc24763ead9c57d3463a80e9d05eea http://chaosdorf.de/.
 git checkout 57104ea967fc24763ead9c57d3463a80e9d05eea
 ```
 
+Get changed files compared to branch
+```bash
+# linux
+git diff --name-only --diff-filter=ACMRTUXB origin/master | grep ".sql"
+```
+```powershell
+# win
+git diff --name-only --diff-filter=ACMRTUXB origin/master | findstr ".sql"
+```
+
 ### 5. SVN
 New svn repo
 ```bash
