@@ -174,6 +174,13 @@ git diff --name-only --diff-filter=ACMRTUXB origin/master | grep ".sql"
 git diff --name-only --diff-filter=ACMRTUXB origin/master | findstr ".sql"
 ```
 
+Delete remote branches that were merged to main
+```bash
+for k in $(git branch -r --merged | egrep -v "(^\*|master|main)"); do 
+    git push origin -d "${k/origin\//}"
+done
+```
+
 ### 5. SVN
 New svn repo
 ```bash
