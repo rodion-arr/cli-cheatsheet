@@ -22,6 +22,8 @@ Table of contents
 
 * [10. Kubernetes Azure](#10-kubernetes-azure)
 
+* [11. DNS](#11-dns)
+
 - - -
 
 ### 1. Archives
@@ -291,4 +293,10 @@ for each in $(kubectl get pods|grep Evicted|awk '{print $1}');
 do
 kubectl delete pods $each
 done
+```
+
+### 11. DNS
+Trace DNS for domain
+```bash
+dig -4 +trace rodion-blog.tech A @8.8.8.8
 ```
